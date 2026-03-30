@@ -14,7 +14,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import "react-toastify/dist/ReactToastify.css";
-import Profile from "./profile";
+
 import BlogPost from "./BlogPost";
 import Orders from "./Orders";
 import Contact from "./Contact";
@@ -22,6 +22,7 @@ import Register from "./Register";
 import Login from "./login";
 import About from "./About";
 import Addition from "./Addition";
+import { Profiler } from "react";
 function App() {
   
  let cartItems = useSelector((state) => state.cart);
@@ -72,7 +73,7 @@ let totalQuantity = cartItems.reduce(
         <Route path="/soup" element={<Soup/>}/>
         
         <Route path="/cart" element={<Cart/>}/>
-        <Route path="/Profile" element={<Profile/>}/>
+        <Route path="/Profile" element={<Profiler/>}/>
         <Route path="/blog/:slug" element={<BlogPost/>} />
         <Route path="/Contact" element={<Contact/>}/>
         <Route path="/About" element={<About/>} />      
