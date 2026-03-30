@@ -21,8 +21,7 @@ import Contact from "./Contact";
 import Register from "./Register";
 import Login from "./login";
 import About from "./About";
-import Addition from "./Addition";
-import { Profiler } from "react";
+
 function App() {
   
  let cartItems = useSelector((state) => state.cart);
