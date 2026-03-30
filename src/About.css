@@ -1,0 +1,33 @@
+.about-container{
+  width: 80%;
+  margin: auto;
+  padding: 40px;
+  text-align: center;
+}
+
+.about-container h1{
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #ff6600;
+}
+
+.about-container p{
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.about-container h3{
+  margin-top: 20px;
+  font-size: 26px;
+}
+
+.about-container ul{
+  list-style: none;
+  padding: 0;
+}
+
+.about-container li{
+  font-size: 18px;
+  margin: 10px 0;
+}
