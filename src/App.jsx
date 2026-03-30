@@ -21,8 +21,7 @@ import Contact from "./Contact";
 import Register from "./Register";
 import Login from "./login";
 import About from "./About";
-import Addition from "./Addition";
-import { Profiler } from "react";
+
 function App() {
   
  let cartItems = useSelector((state) => state.cart);
@@ -54,7 +53,7 @@ let totalQuantity = cartItems.reduce(
           {/* <Link to="/Register"><i class="fa-solid fa-file"></i>Register</Link>
        <Link to="/Login"><i class="fa-brands fa-wpforms"></i>Login</Link>
        <Link to="/About">About Us</Link> */}
-       {/* <Link to="/Addition">Add</Link> */}
+      
 {/* <Link to="/blog/first-post">First Post</Link>
 <Link to="/blog/Second-post">Second Post</Link>
 <Link to="/blog/Third-post">Third Post</Link> */}
@@ -73,15 +72,14 @@ let totalQuantity = cartItems.reduce(
         <Route path="/soup" element={<Soup/>}/>
         
         <Route path="/cart" element={<Cart/>}/>
-        <Route path="/Profile" element={<Profiler/>}/>
+
         <Route path="/blog/:slug" element={<BlogPost/>} />
         <Route path="/Contact" element={<Contact/>}/>
         <Route path="/About" element={<About/>} />      
          <Route path="/Orders" element={<Orders/>}/>
         <Route path="/Register" element={<Register/>}/>
         <Route path="/Login" element={<Login/>}/>
-        {/* <Route path="/Addition" element={<Addition/>}/> */}
-       
+      
       </Routes>
     </BrowserRouter>
      
